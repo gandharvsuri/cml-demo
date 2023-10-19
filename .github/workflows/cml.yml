@@ -12,4 +12,5 @@ jobs:
         run: |
           
           echo "## Model metrics" > report.md
+          
           cml-send-comment report.md
