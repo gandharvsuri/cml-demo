@@ -11,4 +11,5 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "# Model metrics" >> report.md
+          echo '![](./ModelTraining.png "Training Curve")' >> report.md
           cml comment create report.md
