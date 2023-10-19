@@ -11,4 +11,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "## Model metrics" > report.md
+          
           cml-send-comment report.md
