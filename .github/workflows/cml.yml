@@ -10,8 +10,5 @@ jobs:
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-
-          # Your ML workflow goes here
-          
           echo "## Model metrics" > report.md
           cml-send-comment report.md
